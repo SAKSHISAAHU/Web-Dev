@@ -1,0 +1,44 @@
+<!-- create a multicolor website that can change color using css variable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        
+        :root{
+            --pricolor:lightblue;
+            --seccolor:lightgrey;
+            --color:white;
+        }
+        body{
+            background-color: var(--seccolor);
+        }
+        ul{
+
+            background-color: var(--pricolor, pink);
+            display: flex;
+            list-style-type: none;
+            padding: 12px;
+            border: 2px solid grey;
+            box-shadow: 6px 10px grey;
+        }
+        ul li{
+            padding: 12px;
+            font-size: larger;
+            font-weight: bolder;
+            color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <h1>created a multicolor website that can change color using css variable</h1>
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>CONTACT</li>
+    </ul>
+</body>
+</html>
