@@ -1,0 +1,66 @@
+<!-- relative and absolute property -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bigbox{
+            border: 3px solid black;
+            margin: 12px;
+            padding: 5px;
+        }
+        .box {
+            border: 2px solid rgb(0, 0, 0);
+            width: 80vw;
+            height: 120px;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        .box1 {
+            /* position: relative; */
+            position: absolute;
+            background-color: crimson;
+            /* z-index: 1; */
+            top: 0px;
+            right:0px;
+
+        }
+
+        .box2 {
+            background-color: darkblue;
+            /* position: relative;
+            left: 100px;
+            top: -50px; */
+        }
+
+        .box3 {
+            background-color: chartreuse;
+
+        }
+
+        .box4 {
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>

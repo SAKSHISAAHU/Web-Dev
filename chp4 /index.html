@@ -1,0 +1,111 @@
+<!-- how to inset image, list and table in HTML -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<body>
+    <!-- image insertion -->
+    <h1>
+        TREE
+    </h1>
+    <img width="1400" height="700" src="img.png" alt="Tree Image"> 
+    <!-- we have to manually put the width and height of the iamge, and we dont need to write px(pixel) after value -->
+    
+    <!-- table insertion -->
+    <table border="1" >
+        <caption>EMPLOYEE DETAILS </caption>
+    <!--line breaker-->
+    <br>
+    <br>
+    <br>
+    <thead>
+        <tr>
+            <th>NAME</th>
+            <th>POSITION</th>
+            <th>SALARY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sakshi</td>
+            <td>Developer</td>
+            <td rowspan="2" >$20k</td>
+        </tr>
+        <tr>
+            <td>Apeksha</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Lekha</td>
+            <td>Manager</td>
+            <td>$15k</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="2" >TOTAL</th>
+            <th>$550</th>
+        </tr>
+    </tfoot>
+    </table>
+
+    <!-- list insertion -->
+    <h2>
+        Unordered Lists
+    </h2>
+    <ul type="square" > 
+        <li>Pen</li>
+        <li>Pencile</li>
+        <li>Eraser</li>
+        <li>Scale</li>
+    </ul>
+    <h2>
+        Ordered list
+    </h2>
+        <ol>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Litch</li>
+        </ol>
+    <h2>
+        Defination list
+    </h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.</dd>
+        </dl>
+    
+</body>
+</html>
+
+<!-- NOTES -->
+
+    <!-- TABLES
+    <table>: Defines the table itself.
+    <tr>: Used for table rows.
+    <th>: Used for table headings.
+    <td>: Used for table cells (data).
+    Rowspan: If you want a table cell to span multiple rows, you can use the rowspan attribute.   
+    Colspan: If you want a table cell to span multiple columns, you can use the colspan attribute.
+    thead,tbody,tfoot just help in grouping dosent add any thing to code 
+     -->
+
+    <!-- LISTS
+     1.Unordered -in type we have 2 option more disc(deafult) and circle
+     2.Ordered- 
+            Setting the 'type' Attribute
+
+            1. Uppercase Roman Numerals: Use type="I"
+            2.Lowercase Roman Numerals: Use type="i"
+            3.Arabic Numerals: Use type="1" (This is the default if the type attribute is not specified)
+            4. Lowercase Alphabetical Letters: Use type="a"
+            5. Uppercase Alphabetical Letters: Use type="A"
+
+     3.Defination
+     
+    -->

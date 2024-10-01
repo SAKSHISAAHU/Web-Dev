@@ -1,0 +1,29 @@
+<!-- CSS specificity -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        /* inline> id> class or attribute> element> universal */
+        *{
+            color: chocolate;
+        }
+        #first{
+            color: blueviolet;
+        }
+        .green{
+            color:chartreuse ;
+        }
+        .cred{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first" class="green cred" style="color: brown;" >we are taking about specificity.</h1>
+    <h2 class="green cred">hello</h2>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!-- forms -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <h1>STUDENT FORM</h1>
+    <form >
+     <div>
+        <label for="username">Enter your name :</label>
+        <input type="text" id="username" name="username" placeholder="enter your name" required>
+    </div>
+    <br>
+    <div>
+        <label >Enter roll.no :</label>
+        <input type="number" name="roll no." placeholder="enter roll.no" >
+    </div>
+    <br>
+    <div>
+        Gender :<input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+    </div>
+    <br>
+    <div>
+        Stream : <input type="checkbox" name="stream" id="Phy">
+        <label for="Phy">Physics</label>
+        <input type="checkbox" name="stream" id="Chem">
+        <label for="Chem">Chemistry</label>
+        <input type="checkbox" name="stream" id="Maths">
+        <label for="Maths">Maths</label>
+        <input type="checkbox" name="stream" id="Bio">
+        <label for="Bio">Biology</label>
+    </div>
+    <br>
+    <div>
+        <label>Enter about yourself : </label><br>
+        <textarea name="comment" autofocus></textarea>
+    </div>
+    <br>
+    <div>
+        Class : <select name="class" id="">
+            <option value="select">select</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="button" value="Submit">
+        <input type="button" value="Reload">    
+    </div>
+    </form>
+   
+</body>
+</html>

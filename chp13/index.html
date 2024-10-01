@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        /* element selector */
+        div{
+            color: brown;
+            background-color: goldenrod;
+        }
+        /* class selector */
+        .myclass{
+            color: cadetblue;
+            background-color: blue;
+        }
+        /* id selector */
+        #myid{
+            color: chartreuse;
+            background-color: darkgreen;
+        }
+        /* child selector */
+        div > h2{
+            color: cornflowerblue;
+            background-color: coral;
+        }
+        /* desendant selector */
+        div p{
+            color: darkkhaki;
+            background-color: darkolivegreen;
+        }
+        /* universal selector */
+        *{
+            margin:  0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: crimson;
+        }
+        a:active{
+            background-color: greenyellow;
+        }
+        a:link{
+            color: rgb(199, 160, 21);
+        }
+        a:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        this explain element selector.
+    </div>
+    <div class="myclass">
+        this explain class selector.
+    </div>
+    <div id="myid">
+        this explain id selector.
+    </div>
+    <div> 
+        <h2>this explain child selector.</h2>
+    </div>
+    <div>
+        <article>
+            <p>this explain desendant selector.</p>
+        </article>
+    </div>
+    <a href="https://www.google.com"> Go to google</a>
+    <a href="https://www.facebook2.com">Go to facebook</a>
+</body>
+</html>
