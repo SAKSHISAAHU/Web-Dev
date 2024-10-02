@@ -1,0 +1,59 @@
+<!-- more about css selector -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        .box:first-child{
+            background-color: blanchedalmond;
+        }
+        .box::first-line{
+            color: crimson;
+        }
+        .boxes *{
+            color:cadetblue;
+            border: 2px solid black;
+        }
+        .box, [data-color=primary]{
+            margin-top: 40px;
+            padding: 40px;
+        }
+        .box:nth-child(even){
+            background-color:lightsalmon;
+        }
+        .box:nth-last-child(3){
+            background-color: darkkhaki;
+        }
+        .boxes::before{
+            content: "more about css selector";
+            color: chocolate;
+        }
+        .boxes::after{
+            content: "thank you";
+            color: rgb(99, 99, 170) ;
+        }
+        ::selection{
+            color: white;
+        }
+        .box::first-letter{
+            color: black;
+            font-size: 30px;
+        }
+        input::placeholder{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, esse assumenda mollitia error aspernatur laboriosam ex quis, maxime id earum ad debitis adipisci veritatis molestiae dignissimos maiores itaque, eaque vitae! Assumenda veniam quam a omnis sit necessitatibus? Fugiat autem excepturi pariatur veritatis, aut omnis minus quasi maxime sit quisquam? Voluptatum dolor corrupti laudantium asperiores molestiae quibusdam perspiciatis? Perspiciatis fugiat quia repellat molestiae quam. Error consectetur, corporis molestias itaque aut libero quae quibusdam, earum, omnis sit sed deleniti ullam eligendi ipsam? Impedit sapiente assumenda, quam perferendis incidunt dignissimos. Expedita, fuga odit! Amet, corrupti. Debitis blanditiis architecto minus dicta dignissimos quasi deleniti.</div>
+        <div data-color="primary" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, esse assumenda mollitia error aspernatur laboriosam ex quis, maxime id earum ad debitis adipisci veritatis molestiae dignissimos maiores itaque, eaque vitae! Assumenda veniam quam a omnis sit necessitatibus? Fugiat autem excepturi pariatur veritatis, aut omnis minus quasi maxime sit quisquam? Voluptatum dolor corrupti laudantium asperiores molestiae quibusdam perspiciatis? Perspiciatis fugiat quia repellat molestiae quam. Error consectetur, corporis molestias itaque aut libero quae quibusdam, earum, omnis sit sed deleniti ullam eligendi ipsam? Impedit sapiente assumenda, quam perferendis incidunt dignissimos. Expedita, fuga odit! Amet, corrupti. Debitis blanditiis architecto minus dicta dignissimos quasi deleniti.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, esse assumenda mollitia error aspernatur laboriosam ex quis, maxime id earum ad debitis adipisci veritatis molestiae dignissimos maiores itaque, eaque vitae! Assumenda veniam quam a omnis sit necessitatibus? Fugiat autem excepturi pariatur veritatis, aut omnis minus quasi maxime sit quisquam? Voluptatum dolor corrupti laudantium asperiores molestiae quibusdam perspiciatis? Perspiciatis fugiat quia repellat molestiae quam. Error consectetur, corporis molestias itaque aut libero quae quibusdam, earum, omnis sit sed deleniti ullam eligendi ipsam? Impedit sapiente assumenda, quam perferendis incidunt dignissimos. Expedita, fuga odit! Amet, corrupti. Debitis blanditiis architecto minus dicta dignissimos quasi deleniti.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, esse assumenda mollitia error aspernatur laboriosam ex quis, maxime id earum ad debitis adipisci veritatis molestiae dignissimos maiores itaque, eaque vitae! Assumenda veniam quam a omnis sit necessitatibus? Fugiat autem excepturi pariatur veritatis, aut omnis minus quasi maxime sit quisquam? Voluptatum dolor corrupti laudantium asperiores molestiae quibusdam perspiciatis? Perspiciatis fugiat quia repellat molestiae quam. Error consectetur, corporis molestias itaque aut libero quae quibusdam, earum, omnis sit sed deleniti ullam eligendi ipsam? Impedit sapiente assumenda, quam perferendis incidunt dignissimos. Expedita, fuga odit! Amet, corrupti. Debitis blanditiis architecto minus dicta dignissimos quasi deleniti.</div>
+        <input type="text" placeholder="enter here...">
+    </div>
+</body>
+</html>
