@@ -1,0 +1,53 @@
+<!-- grid using grid template area -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 3px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+            "side article article"
+            "footer footer footer";
+            gap: 10px;
+        }
+        .boxes{
+            border: 3px solid olivedrab;
+            height: 80px;
+        }
+        .item-1{
+            grid-area: nav;
+            background-color: crimson;
+        }
+        .item-2{
+            grid-area: side;
+            background-color: rgb(80, 214, 255);
+        }
+        .item-3{
+            grid-area: article;
+            background-color: gold;
+        }
+        .item-4{
+            grid-area: footer;
+            background-color: greenyellow;
+        }
+        .item-5{
+            grid-area: nav;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxes item-1">1</div>
+        <div class="boxes item-2">2</div>
+        <div class="boxes item-3">3</div>
+        <div class="boxes item-4">4</div>
+        <div class="boxes item-5">5</div>
+    </div>
+</body>
+</html>
+
