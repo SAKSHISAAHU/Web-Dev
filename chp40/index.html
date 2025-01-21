@@ -1,0 +1,88 @@
+<!-- Accessing Children, Parent & Sibling Nodes through DOM -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 60px;
+            height: 40px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            width: 25%;
+            background-color: pink;
+        }
+
+        td {
+            background-color: lightyellow;
+        }
+
+        td {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+    <table>
+        <tr>
+            <th>NAME</th>
+            <th>JD</th>
+            <th>SALARY</th>
+        </tr>
+        <tr>
+            <td>Sakshi</td>
+            <td>Product designer</td>
+            <td>6LPA</td>
+        </tr>
+        <tr>
+            <td>Apeksha</td>
+            <td>Web Developer</td>
+            <td>5LPA</td>
+        </tr>
+        <tr>
+            <td>Samarth</td>
+            <td>Manager</td>
+            <td>6LPA</td>
+        </tr>
+    </table>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        console.log("Hello DOM");
+
+        const a = document.body //assigning variable
+        console.log(a);
+        console.log(a.childNodes);
+        console.log(a.childNodes[1]);
+
+        const b = a.childNodes[1]; //assigning variable into variable
+        console.log(b.firstElementChild);
+        console.log(b.parentElement);
+        console.log(b.children);
+        console.log(b.nextElementSibling);
+        console.log(b.nextSibling);
+
+        const c = a.childNodes[3]
+        console.log(c.rows);
+    </script>
+</body>
+
+</html>
