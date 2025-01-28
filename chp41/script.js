@@ -15,3 +15,4 @@ console.log(document.querySelectorAll(".box"));
 //     Element.style.backgroundColor="yellowgreen"
 // })
 console.log(document.getElementsByTagName("div"));
+
