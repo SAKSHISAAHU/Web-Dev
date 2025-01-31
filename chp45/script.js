@@ -1,4 +1,4 @@
-// async/await in JS
+// // async/await in JS
 
 async function weather() {
     let delhiWeather = new Promise((resolve, reject) => {
@@ -23,5 +23,8 @@ x.then((value)=>{
     console.log(value);
     
 })
+
+
+
 
 
