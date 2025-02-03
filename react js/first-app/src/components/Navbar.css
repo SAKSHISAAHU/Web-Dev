@@ -1,0 +1,16 @@
+/* body{
+    background-color: brown;
+} */
+ nav,ul{
+    display: flex;
+ }
+ li{
+    list-style-type: none;
+ }
+ ul{
+    gap: 30px;
+ }
+ nav{
+    background-color:cadetblue;
+    padding: 20px;
+ }
