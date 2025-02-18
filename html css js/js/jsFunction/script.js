@@ -1,8 +1,15 @@
 // function declaration
-function fun() {
-    console.log("hello")
-}
-fun()
+    // directly
+    function fun() {
+        console.log("hello")
+    }
+    fun()
+
+    // inside variable
+    const greet= function fun() {
+        console.log("hello")
+    }
+    fun()
 
 // parameter and argument
 function sum(num1,num2) {

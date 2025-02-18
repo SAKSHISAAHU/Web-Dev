@@ -1,5 +1,5 @@
-// declaration of symbol in oject keys- we use [] bracket, we cannot wite it direclty
-const mySym=Symbol("hii")
+                    // declaration of symbol in oject keys- we use [] bracket, we cannot wite it direclty
+                    const mySym=Symbol("hii")
 
 // declaration by literals
 const objName={
@@ -37,7 +37,7 @@ objName.greet2=function(){
 }
 console.log(objName.greet2())
 
-// *********************************
+// ***************************************************************
 
 // declaration by constructor gives singleton object
 const obj1=new Object()
