@@ -48,6 +48,12 @@ const obj2={}
 obj2.id=1
 obj2.name="sakshi"
 console.log(obj2)
+    // or
+const obj = {};
+obj["name"] = "Sakshi";
+obj[1] = "Number one"; 
+console.log(obj); 
+
 
 // nested object
 const obj3={
