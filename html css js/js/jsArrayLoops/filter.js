@@ -62,7 +62,7 @@ let sum=num.reduce((acc, item)=>{
 },0);
 console.log(sum)
 
-// example -object under array
+// example - object under array
 let cart=[
     {
         item:"cap",

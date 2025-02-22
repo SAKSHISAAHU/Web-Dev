@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg{
+            background-color:black;
+            color: azure;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="bg">
+    <div>
+        <h1 id="heading" class="DOM">Document Object Model</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul id="ulitems">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </div>
+    <script>
+        const title=document.getElementById("ulitems")
+        // console.log(title);
+        // console.log(title.children[2])
+        // console.log(title.children[1].innerHTML);
+        // for (let i = 0; i < title.children.length; i++) {
+        //     console.log(title.children[i].innerHTML);
+        // }
+        // title.children[1].style.color="orange"  
+              
+    </script>
+</body>
+</html>
