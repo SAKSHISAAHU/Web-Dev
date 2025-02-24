@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
     <style>
-        .bg{
-            background-color:black;
+        .bg {
+            background-color: black;
             color: azure;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: #fff;
+            color: black;
+            border-radius: 10px;
             padding: 10px;
         }
     </style>
 </head>
+
 <body class="bg">
     <div>
-        <h1 id="heading" class="DOM">Document Object Model</h1>
+        <h1 id="heading" class="DOM">Document Object Model <span>(DOM)</span></h1>
         <p>Lorem ipsum dolor sit amet.</p>
-        <ul id="ulitems">
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-        </ul>
+        <div class="box">
+            <ul id="ulitems">
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+        </div>
     </div>
     <script>
-        const title=document.getElementById("ulitems")
-        // console.log(title);
-        // console.log(title.children[2])
-        // console.log(title.children[1].innerHTML);
-        // for (let i = 0; i < title.children.length; i++) {
-        //     console.log(title.children[i].innerHTML);
-        // }
-        // title.children[1].style.color="orange"  
-              
+        const title = document.getElementById("ulitems")
+        for (let i = 0; i < title.children.length; i++) {
+            console.log(title.children[i].innerHTML);
+        }
+        title.children[1].style.color="orange"  
+        // console.log(title.childNodes[3].innerHTML)   
+        // console.log(title.children)
+        // console.log(title.childNodes)
+
+        const head=document.querySelector("#heading")
+        // console.log(head.innerHTML)
+        // console.log(head.textContent)
+        // console.log(head.innerText)
+
+        // creating new li element
+        const newLi = document.createElement("li");
+        newLi.textContent = "four";
+        newLi.style.color="red"
+        // Append the new element to an existing list
+        document.getElementById("ulitems").appendChild(newLi);
+        
     </script>
 </body>
+
 </html>
