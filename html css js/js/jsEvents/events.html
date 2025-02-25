@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(54, 56, 54);
+            color: beige;
+        }
+        ul li{
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="heading">Events</h1>
+        <ul id="items">
+            <li><button>button1</button></li>
+            <li><button>button2</button></li>
+            <li><button>button3</button></li>
+        </ul>
+    </div>
+</body>
+<script>
+    const ul=document.querySelector("#items")
+    // console.log(ul.children[0].style.backgroundColor="green")
+    ul.addEventListener("click", function(e){
+        // console.log(e.target.textContent)
+        if(e.target.textContent==="button1"){
+            document.querySelector('body').style.backgroundColor="green"
+        }else if(e.target.textContent==="button2" || e.target.textContent==="button3"){
+            document.body.style.backgroundColor="rgb(54, 56, 54)"
+        }
+    })
+</script>
+</html>
