@@ -12,31 +12,62 @@
         h1{
             padding-left: 20px;
         }
-        ul li{
-            padding: 10px;
+        ul
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            list-style: none;
+        }
+        button{
+            width: 100px;
+            height:50px;
+            font-size: 30px ;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <h1 id="heading">Events</h1>
+        <h1 id="heading">Change Background Color</h1>
         <ul id="items">
-            <li><button>button1</button></li>
-            <li><button>button2</button></li>
-            <li><button>button3</button></li>
+            <li id="one"><button>set</button></li>
+            <li id="two"><button>reset</button></li>
         </ul>
     </div>
 </body>
 <script>
-    const ul=document.querySelector("#items")
-    // console.log(ul.children[0].style.backgroundColor="green")
+    const ul=document.querySelector("#items");
+    // addEventListener(), have 3 parameters event(eg-click), function, useCapture (which is for event propogation which have value true(for event capturing-propogates top to bottom) and false(for event bubbling-propogates bottom to top) which is deafult)
     ul.addEventListener("click", function(e){
         // console.log(e.target.textContent)
-        if(e.target.textContent==="button1"){
+        if(e.target.textContent==="set"){
             document.querySelector('body').style.backgroundColor="green"
-        }else if(e.target.textContent==="button2" || e.target.textContent==="button3"){
+        }else if(e.target.textContent==="reset"){
             document.body.style.backgroundColor="rgb(54, 56, 54)"
         }
     })
+
+    // event propogation
+    // we can stop event propogation using stopPropogation()
+    // can we can prevent it for happning using preventDeafult()
+
+        // false- which means event bubbling- so its "changed" mssg will appear then "changing background"
+        document.getElementById("items").addEventListener("click",function(e){
+            stopPropogation()  //prevent from giving alert message
+            alert("changing background")
+        },false)
+        document.getElementById("one").addEventListener("click",function(e){
+            alert("changed")
+        },false)
+
+        // true- means event capturing- first "changing bg" will appear then "changed" will
+        document.getElementById("items").addEventListener("click",function(e){
+            preventDeafult()  //stop giving alert meassage
+            alert("changing background")
+        },true)
+        document.getElementById("one").addEventListener("click",function(e){
+            preventDeafult()
+            alert("changed")
+        },true)
 </script>
 </html>
