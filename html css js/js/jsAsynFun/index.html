@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asyn JS</title>
 </head>
 <body>
-    
+    <h1 id="title">Asyn JS</h1>
+    <h3 id="heading">Web APIs</h3><span><button id="stop">change stop</button></span>
 </body>
+<script>
+    // setTimeout() and setInterval() is NOT a core JavaScript function.It is part of the Web APIs, which are provided by the browser or the Node.js runtime.
+
+    //setTimeout() executes a function after a specified delay
+    // setTimeout(callback, delay, param1, param2, ...);
+
+        // declarartion
+        setTimeout(() => {
+            document.getElementById("title").textContent = "Asynchronous Javascript"
+        }, 2000);
+
+        // Passing a Function Reference
+        const fun = function () {   //or function fun(){ 
+            // alert("hello")
+        }
+        setTimeout(fun, 2000);
+
+        // Passing Arguments
+        function intro(name, age) {
+            // alert(`hello, my name is ${name} and i am ${age} years old`)
+        }
+        setTimeout(intro, 2000, "sakshi", 20);
+
+        // cleartimeout - to cancel a setTimeout before it executes
+        const result = setTimeout(() => {
+            document.getElementById("heading").textContent = "time-interval functions"
+        }, 3000);
+        document.getElementById("stop").addEventListener("click", function () {
+            clearTimeout(result)
+            alert("stopped")
+        }, false)
+
+    //setInterval() method repeatedly executes a function at a fixed time interval
+    // setInterval(callback, delay, param1, param2, ...);
+
+        setInterval(() => {
+            // console.log("hii")
+        },3000);
+    // clearinterval
+</script>
 </html>
