@@ -43,11 +43,12 @@
         }, false)
 
     //setInterval() method repeatedly executes a function at a fixed time interval
-    // setInterval(callback, delay, param1, param2, ...);
+    //setInterval(callback, delay, param1, param2, ...);
+    //clearInterval - to cancel setInterval before it executes.
 
-        setInterval(() => {
-            // console.log("hii")
+        const result2=setInterval(() => {
+            console.log("hii")
         },3000);
-    // clearinterval
+        clearInterval(result2)
 </script>
 </html>
