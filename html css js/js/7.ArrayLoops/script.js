@@ -4,8 +4,7 @@
 //                                                   for-each
 //                                                 map datatype
 
-// for-of loop
-// Iterates Over Values
+// for-of loop - Iterates Over Values
 
     // in Array
     let num=[1,2,3,4,5]

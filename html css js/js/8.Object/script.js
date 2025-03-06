@@ -14,7 +14,7 @@ const objName={
     // mostly used
     console.log(objName)
     console.log(objName.user)
-// whernever if we want to acess any key which is wrtten as "string" or "symbol" we access them as,
+// whernever if we want to acess any key which is written as "string" or "symbol" we access them as,
 console.log(objName["full name"])
 console.log(objName[mySym])
 
